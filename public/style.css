@@ -126,6 +126,7 @@ body {
     flex-direction: column;
     align-items: center;
 }
+
 .third-box-title {
     background-color: white;
     margin: 12px 24px 0px 24px;
@@ -139,12 +140,8 @@ body {
 }
 .third-box-title h4 {
     color: black;
-    /* padding: 0 24px; */
-    /* margin-top: 0.8rem;
-    margin-bottom: 0.8rem; */
-    /* margin-top: 12px;
-    margin-bottom: 12px; */
 }
+
 .third-box h5{
     color: white;
     padding: 0 24px;
@@ -321,6 +318,7 @@ color: white;
     align-items: center;
     justify-content: space-between;
 }
+
 .v-half-box-1-1,.v-half-box-1-2,.v-half-box-1-3{
     width: 32%;
     height: 100%;
@@ -342,10 +340,6 @@ color: white;
     background-color: var(--base-light-orange-color);
 }
 
-.v-half-box-1-1 img,.v-half-box-1-2 img,.v-half-box-1-3 img{
-    height: 32%;
-    fill: var(--base-background-color-contrast);
-}
 
 .v-half-box-1-1 h4,.v-half-box-1-2 h4,.v-half-box-1-3 h4{
     font-size: 14px;
@@ -353,6 +347,11 @@ color: white;
     text-align: center;
     margin: 12px;
 }
+.v-half-box-1-1 i, .v-half-box-1-2 i,.v-half-box-1-3 i {
+    font-size: 40px;
+    color: white;
+}
+
 
 .laddoo-mission-statement{
     height: 28vh;
@@ -557,51 +556,196 @@ color: white;
     font-weight: 500;
 }
 
-
-@media (max-width: 767px) {
-    .header{
+@media (max-width: 480px) {
+    .header {
         height: 80px;
     }
-    
+    .header img{
+        height: 50px;
+    }
     .Main-banner{
         height: calc(200vh - 80px);
     }
-
+    /* contains code for the lading banner in mobile */
     .banner-box{
+        flex-direction: column-reverse;
         height: 46%;
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-evenly;
-    align-items: center;
-    }
 
-    .banner-box img {
-        /* height: 100%; */
-        width: 100%;
     }
-
-    .banner-box h1 {
-        font-size: 40px;
+    .banner-box img{
+        width: 96%;
     }
-
+    .banner-box h1{
+        font-size: 44px;
+        margin: 12px;
+    }
+    .banner-box h2 {
+        margin: 12px;
+    }
+    .social-icon-wrap{
+        margin: 12px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+    /* end */
     .main-box-wrap{
+        width: 96%;
         height: 50%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .half-box{
+        width: 100%;
+        height: 46%;
+    }
+    .third-box,.third-box-1 {
+        width: 100%;
+        height: 24%;
+    }
+
+    .laddoo-div{
+        height: 96vh;
+    }
+
+    .laddoo-box{
         flex-direction: column;
     }
 
-    .half-box{
+    .laddoo-box-text-wrap h1{
+        font-size: 74px;
+        text-align: center;
+    }
+    .laddoo-box-text-wrap h2{
+        font-size: 28px;
+        text-align: center;
+    }
+    .laddoo-box img{
         width: 100%;
-        height: 44%;
     }
 
-    .third-box{
-        width: 100%;
-        height: 22%;
+    .about-laddoo-div{
+        height: 160vh;
     }
-    .third-box-1{
-        width: 100%;
-        height: 22%;
+    .about-laddoo-wrap{
+        flex-direction: column;
     }
+    .about-laddoo-text{
+        width: 100%;
+    }
+    .about-laddoo-text h1{
+        font-size: 38px;
+    }
+    .about-laddoo-text h4{
+        font-size: 16px;
+    }
+    .laddoo-stats{
+        width: 100%;
+        justify-content: flex-start;
+        
+    }
+    .v-half-box{
+        height: 28%;
+    }
+
+    .v-half-box h1{
+        font-size: 60px;
+    }
+    .v-half-box h4{
+        text-align: center;
+        margin: 8px;
+        font-size: 60%;
+    }
+    .v-half-box-1{
+        flex-direction: column;
+        height: 50%;
+        margin-top: 2vh;
+    }
+    .v-half-box-1-1, .v-half-box-1-2, .v-half-box-1-3{
+        width: 100%;
+        flex-direction: row;
+        height: 30%;
+    }
+    .v-half-box-1-1 i, .v-half-box-1-2 i,.v-half-box-1-3 i {
+        font-size: 32px;
+        color: white;
+        margin: 12px;
+    }
+    .laddoo-mission-statement-wrap h1{
+        font-size: 24px;
+    }
+    .laddoo-usp-div{
+        height: 100vh;
+    }
+    .laddoo-usp-title{
+        height: 16%;
+    }
+    .laddoo-usp-title h1 {
+margin: 12px;    }
+    .laddoo-usp-wrap{
+        flex-direction: column;
+    }
+    .laddoo-usp-cards-wrap{
+        flex-direction: column;
+    }
+    .laddoo-usp-card-1{
+        width: 100%;
+        height: 32%;
+    }
+    .laddoo-usp-card-text-wrap h3{
+        font-size: 16px;
+    }
+    .faq-div{
+        height: 200vh;
+    }
+    .faq-title{
+        height: 10%;
+    }
+
+    .faq-box-wrap{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .faq-box-card{
+        width: 100%;
+        height: 48%;
+    }
+    .faq-box-card h5 {
+        margin: 16px 0px;
+    }
+    .get-in-touch-div{
+        height: 100vh;
+    }
+    .get-in-touch-div-banner{
+        height: 100%;
+        flex-direction: column;
+    }
+    .get-in-touch-div-text-wrap {
+        height: 50%;
+        width: 100%;
+    }
+    .get-in-touch-div-text-wrap h1 {
+        font-size: 32px;
+        margin: 12px;
+    }
+    .get-in-touch-div-text-wrap h3 {
+        font-size: 16px;
+        margin: 12px;
+    }
+
+.get-in-touch-div-text-wrap h2 {
+    font-size: 22px;
+    margin: 12px;
+}
+.get-in-touch-div-banner img{
+    width: 100%;
+}
+.footer-wrap{
+    flex-direction: column;
+}
+.footer-wrap h3{
+    font-size: 12px;
+}
 
 
 }
