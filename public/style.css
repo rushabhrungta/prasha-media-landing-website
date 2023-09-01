@@ -10,8 +10,6 @@
     --base-deep-orange-color: #d67468;
     /* --base-light-orange-color: #fcb060; */
     --base-light-orange-color: #FFA500;
-
-
     --base-yellow-color: #f9f871;
 }
 
@@ -906,6 +904,9 @@ body {
         height: auto;
         width: 60%;
     }
+    .laddoo-usp-card-image-wrap img{
+        height: auto;
+    }
 
     .laddoo-usp-card-text-wrap h3 {
         font-size: 16px;
@@ -1231,6 +1232,9 @@ body {
     .laddoo-usp-card-image-wrap {
         height: auto;
         width: 68%;
+    }
+    .laddoo-usp-card-image-wrap img{
+        height: auto;
     }
 
 
