@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700&display=swap');
+
+:root {
+    /* --base-background-color: #0F1322; */
+    --base-background-color: #F6EDDD;
+    --base-backgrond-color-secondary-contrast: #191C29;
+    --base-background-color-contrast: #49304e;
+    --base-contrast-color: #934c67;
+    --base-deep-orange-color: #d67468;
+    /* --base-light-orange-color: #fcb060; */
+    --base-light-orange-color: #FFA500;
+    --base-yellow-color: #FAE748;
+    --base-title-font-color: #000;
+    --base-secondary-font-color: #626262;
+    --base-green: #19C4A6;
+    --base-blue: #1796C0;
+    --base-pink: #F73E77;
+}
+
+
+body {
+    margin: auto;
+    font-family: 'Nunito Sans', sans-serif;
+    /* font-size: 3.733vw;
+    font-weight: 500; */
+    /* line-height: 1.2; */
+    background-color: var(--base-background-color);
+}
+
+.container {
+    background-color: var(--base-background-color);
+}
+
+/* banner level styling starts here  */
+
+.main-banner{
+    height: 100vh;
+    display:flex ;
+}
+
+/* .main-banner-1, .main-banner-2{
+    width: 50%;
+} */
+
+.main-banner-1{
+    width: 30%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-banner-2{
+    width: 70%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* banner level styling ends here  */
+
+/* main banner-1 styling starts here */
+
+.header{
+height: auto;
+display: flex;
+justify-content: center;
+}
+.header img{
+    height: 6vh; 
+    margin: 2vh 0;
+}
+.main-banner-1 h1 {
+    text-align: center;
+    color: var(--base-secondary-font-color);
+}
+.team-image {
+    width: 68%;
+}
+
+
+/* main banner-1 styling ends here */
+
+/* main banner-2 styling starts here */
+
+.founding-team{
+    height: auto;
+    width: 96%;
+    background-color: white;
+    border-radius: 20px;
+    border: solid var(--base-light-orange-color);
+    margin: 2vh 0;
+    display: flex;
+    justify-content: center;
+}
+.team-box-wrap{
+    display: flex;
+    justify-content: space-evenly;
+}
+.team-box,.team-box-1{
+    height: auto;
+    width: 47%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    border: solid var(--base-light-orange-color);
+}
+.team-box-1{
+    margin-bottom: 2vh;
+}
+.team-box img,.team-box-1 img{
+    width: 40%;
+    border: solid var(--base-light-orange-color);
+    border-radius: 500px;
+    margin-top: 2vh;
+}
+.team-box h1,.team-box-1 h1{
+    margin: 12px 12px 0px 12px;
+}
+.team-box h2,.team-box-1 h2{
+    color: var(--base-secondary-font-color);
+    margin: 12px;
+}
+.team-box h3,.team-box-1 h3{
+    margin-right: 12px;
+    margin-left: 12px;
+    text-align: center;
+    color: var(--base-secondary-font-color);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.social-icon-wrap{
+    margin: 1vh 0;
+}
+
+.btn {
+    border: none;
+    background-color: var(--base-background-color);
+    color: var(--base-light-orange-color);
+    padding: 12px 16px;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--base-light-orange-color);
+    color: var(--base-background-color);
+}
+
+@media (max-width: 600px){
+    /* banner level styling starts here  */
+
+.main-banner{
+    height: auto;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+/* .main-banner-1, .main-banner-2{
+    width: 50%;
+} */
+
+.main-banner-1{
+    width: 100%;
+}
+.main-banner-2{
+    width: 100%;
+}
+
+/* banner level styling ends here  */
+
+/* main banner-2 styling starts here */
+
+.team-box-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.team-box,.team-box-1 {
+    width: 96%;
+    margin-bottom: 1vh;
+}
+/* main banner-2 styling ends here */
+
+}
+
+@media (min-width: 601px) and (max-width: 1023px){
+
+    /* banner level styling starts here  */
+
+.main-banner{
+    height: auto;
+    flex-direction: column;
+    overflow: scroll;
+}
+
+/* .main-banner-1, .main-banner-2{
+    width: 50%;
+} */
+
+.main-banner-1{
+    width: 100%;
+}
+.main-banner-2{
+    width: 100%;
+}
+
+/* banner level styling ends here  */
+
+/* main banner-2 styling starts here */
+
+.team-box-wrap{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+.team-box,.team-box-1 {
+    width: 96%;
+    margin-bottom: 1vh;
+}
+/* main banner-2 styling ends here */
+.team-image {
+    width: 32%;
+}
+}
